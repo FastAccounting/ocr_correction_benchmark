@@ -1,1 +1,20 @@
-# ocr_correction_benchmark
+# 日本語OCR誤り訂正ベンチマーク
+
+## 概要
+
+## データ形式
+データファイル datasets_companyname/*.json
+
+データファイルはjsonl形式で構成されています。
+各行データは以下のような形式です。
+```json
+{"id":"image_10000000","tgt":"有限会社オオサワボディ","src":"有限会社オオサワボディ","correct":true}
+```
+- idは項目ID
+- tgtはあるべきOCR結果テキスト
+- srcはOCR結果テキスト
+- correctはtgtとsrcが一致しているかの真偽
+
+
+## 参考文献
+藤武将人、「証憑を用いた日本語OCR誤り訂正ベンチマークの構築」、言語処理学会第30回年次大会(NLP2024)
